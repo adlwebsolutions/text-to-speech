@@ -1,0 +1,17 @@
+/* This is for input fields when they do not have focus */
+    
+.main{display:flex; }textarea{ border:#FF9B1B 1px solid;padding:10px;border-radius:10px;background-color:rgb(255 255 255 / .1);
+    width:50%;font-size:16px;margin-top:8px;}.optionsDiv{position:relative;float:left;min-width:150px;
+      margin-top:10px;margin-right:10px}#audioText{margin-left:20px;margin-top:20px}.optionsDiv:after{content:'<>';font:17px "Consolas",monospace;
+      color:#333;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);
+      transform:rotate(90deg);right:11px;top:14px;padding:0 0 2px;border-bottom:1px solid #FF9B1B;position:absolute;
+      pointer-events:none}.optionsDiv select{-webkit-appearance:none;-moz-appearance:none;appearance:none;
+        display:block;width:100%;max-width:320px;height:40px;float:right;padding:0 10px;
+        font-size:16px;line-height:1.75;color:#333;background-color:rgb(255 255 255 / .3);background-image:none;
+        border:#FF9B1B 1px solid;-ms-word-break:normal;word-break:normal;border-radius:6px}*{margin:0;padding:0;
+          box-sizing:border-box}body{color:rgb(0, 0, 0);font-family:'Roboto Mono',monospace;font-size:var(--body-font-size);
+          font-weight:var(--body-font-weight);background-color:#f0f0f0}.button-standard{padding:20px 20px;
+            margin:5px;font-size:16px;border:none;border-radius:60px;color:#000;background-color:white;cursor:pointer;transition:background-color 0.3s ease;
+            border:#FF9B1B 1px solid}.button-standard:hover{background-image:linear-gradient(to right,#43e97b 0%,#38f9d7 100%)}#controls.container{display:flex;
+              justify-content:start;align-items:start}.icon-link{width:20px;height:20px;margin-left:5px;vertical-align:middle}.icon-link-small{width:16px;height:16px;margin-left:5px;vertical-align:middle}.defaultButton{padding:10px;margin-top:20px;color:rgb(125, 125, 129);
+                border-radius:5px;background-color:white;margin-left:20px;border:#FF9B1B 1px solid}.defaultButton:hover{background-image:linear-gradient(to right,#43e97b 0%,#38f9d7 100%);border-radius:5px;color: white;}.section-alignment{margin-left:20px}#textInput{width:600px;height:300px}

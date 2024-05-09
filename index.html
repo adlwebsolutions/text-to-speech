@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Text To Speech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div id="section-1" class="section-alignment">
+      <!-- Top content -->
+        <h2 id="landing-header">Online text to speech AI</h2>
+        <div class="padding-semi-large"></div>
+        <div class="padding"></div>
+        <textarea type="text" id="textInput" rows="8" placeholder="Just Paste any text Over here no limitions, you can expand the text area longer"></textarea>
+        <div class="padding-semi-large"></div>
+      <div id="app-store-buttons">
+              <button id="speakTextButton" class="button-standard" onclick="speakInputText()">speak</button>
+              <button id="pauseButton" class="button-standard" onclick="pauseSpeech()">pause</button>
+
+
+              <button class="button-standard" onclick="stopSpeech()">stop</button>            
+      </div>
+<p style="margin-top: 10px;">Choose the Voice you like</p>
+
+      <div id="dropdowns">
+            <div class="optionsDiv">
+                    <select name="voiceOptions" id="voiceOptions" onchange="changeVoice(this.value)">
+                      <option value="voice1">Arun's</option>
+                      <option value="voice3">Laxme's</option>
+                      <option value="voice6">Subha's</option>
+                      <option value="voice4">Aadhya's</option>
+                      <option value="voice5">Maily's</option>
+                    </select>
+            </div>
+            <div class="optionsDiv">
+                  <select name="speedOptions" id="speedOptions" onchange="changeVoiceSpeed(this.value)">
+                    <option value="speed1">1x speed</option>
+                    <option value="speed0.75">0.75x speed</option>
+                    <option value="speed0.5">0.5x speed</option>
+                    <option value="speed1.25">1.25x speed</option>
+                    <option value="speed1.5">1.5x speed</option>
+                    <option value="speed1.75">1.75x speed</option>
+                    <option value="speed2">2x speed</option>
+                  </select>
+      </div>
+      </div>
+      </div>
+      </div>
+      <h3 style="margin: 20px;">Unplug your<span style="color:#FF9B1B">Earphone</span>  in your Device to <span style="font-size:34px;color:#43e97b">Record the Audio</span></h3>
+      <p id="audioText">You can Record the Audio By Start recording</p>
+  <div class="container">
+    <button id="startButton" class="defaultButton" >Start Recording</button>
+    <button id="stopButton" class="defaultButton" disabled onclick="stopSpeech()">Stop  Recording!</button>
+    <button id="playButton" class="defaultButton" disabled>Play Recording!</button>
+    <button  onclick="location.reload()" class="button-standard">Reset</button>
+</div>
+<p id="audioText">Play and Download</p>
+
+<audio id="audioElement" controls></audio>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
